@@ -1,0 +1,23 @@
+name: My First Workflow
+on: push
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: STEP1
+        run: echo "Helo from Step1"
+
+      - name: Step2
+        run: echo "Helo from Step2"
+
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Final Step
+        run: echo "Helo from Final Step"
+
+  job-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Last and Final Step
+        run: echo "Helo from Last and Final Step"
