@@ -1,0 +1,8 @@
+name: My Second day Workflow
+on: push
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Trigger Event
+        run: echo "My trigger event is ${{github.event_name}}"
